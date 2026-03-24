@@ -1,0 +1,12 @@
+{
+  "crons": [
+    {
+      "path": "/api/prices/ingest",
+      "schedule": "* * * * *"
+    },
+    {
+      "path": "/api/prices/ingest-gecko",
+      "schedule": "*/5 * * * *"
+    }
+  ]
+}

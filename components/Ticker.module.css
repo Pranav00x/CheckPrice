@@ -1,0 +1,61 @@
+.ticker {
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid #1a1a1a;
+  padding: 8px 0;
+}
+
+.track {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  white-space: nowrap;
+  animation: marquee 30s linear infinite;
+}
+
+.content:hover {
+  animation-play-state: paused;
+}
+
+.item {
+  font-size: 12px;
+  font-family: "IBM Plex Mono", monospace;
+  margin-right: 4px;
+}
+
+.symbol {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.price {
+  color: #ffffff;
+  font-variant-numeric: tabular-nums;
+}
+
+.changeUp {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.changeDown {
+  color: #555555;
+  font-weight: 400;
+}
+
+.dot {
+  color: #555555;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,94 @@
+.panel {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000000;
+  border-top: 1px solid #1a1a1a;
+  padding: 16px;
+  z-index: 100;
+  transform: translateY(0);
+  transition: opacity 150ms;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.titleRow {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.symbol {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.sep {
+  color: #555555;
+  font-size: 14px;
+}
+
+.name {
+  color: #555555;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.close {
+  background: none;
+  border: none;
+  color: #555555;
+  font-size: 20px;
+  cursor: pointer;
+  font-family: "IBM Plex Mono", monospace;
+  padding: 0;
+  line-height: 1;
+}
+
+.close:hover {
+  color: #ffffff;
+}
+
+.priceRow {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 2px;
+}
+
+.priceInr {
+  font-size: 32px;
+  color: #ffffff;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.changeUp {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.changeDown {
+  font-size: 14px;
+  color: #555555;
+  font-weight: 400;
+}
+
+.priceUsd {
+  font-size: 20px;
+  color: #555555;
+  font-variant-numeric: tabular-nums;
+  margin-bottom: 12px;
+}
+
+.rangeRow {
+  margin-bottom: 12px;
+}
