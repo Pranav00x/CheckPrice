@@ -2,11 +2,11 @@
   "crons": [
     {
       "path": "/api/prices/ingest",
-      "schedule": "* * * * *"
+      "schedule": "0 0 * * *"
     },
     {
       "path": "/api/prices/ingest-gecko",
-      "schedule": "*/5 * * * *"
+      "schedule": "0 12 * * *"
     }
   ]
 }
